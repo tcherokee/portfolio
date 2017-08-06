@@ -1,0 +1,17 @@
+header {
+  position: relative;
+  background: $primary-color;
+  height: 100%;
+  color: $white;
+
+  section {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    height: 250px;
+  }
+}

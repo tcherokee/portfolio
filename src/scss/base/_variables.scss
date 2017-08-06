@@ -2,11 +2,24 @@
 $white: #fff;
 $black: #000;
 
+$teal : #009688;
+$yellow: #ffeb3b;
+$dark-blue: #152126;
+$orange: #e26127;
+$eggshell: #eeeddf;
+
+
+$primary-color: $teal;
+$secondary-color: $dark-blue;
+$tertiary-color: $eggshell;
+
+$highlight-primary: $yellow;
+$highlight-secondary: $orange;
 
 /*
   Font Stacks
 */
-$font-size: 16;    
+$font-size: 16;
 
 $stack-sans-serif: Helvetica, Arial, sans-serif;
 $stack-cursive: cursive;

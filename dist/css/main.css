@@ -1,4 +1,7 @@
 /*
+  Font Stacks
+*/
+/*
   Breakpoints
 */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -366,5 +369,23 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */ }
+
+html, body {
+  height: 100%; }
+
+header {
+  position: relative;
+  background: #009688;
+  height: 100%;
+  color: #fff; }
+  header section {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    height: 250px; }
 
 /*# sourceMappingURL=main.css.map */
