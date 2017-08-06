@@ -2,6 +2,17 @@
 $white: #fff;
 $black: #000;
 
+
+/*
+  Font Stacks
+*/
+$font-size: 16;    
+
+$stack-sans-serif: Helvetica, Arial, sans-serif;
+$stack-cursive: cursive;
+$stack-righteous: 'Righteous', $stack-sans-serif;
+$stack-open-sans: 'Open Sans', $stack-sans-serif;
+
 /*
   Breakpoints
 */
