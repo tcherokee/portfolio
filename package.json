@@ -1,0 +1,30 @@
+{
+  "name": "tolumi-portfolio",
+  "version": "1.0.0",
+  "description": "Tolumi's Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcherokee/portfolio.git"
+  },
+  "author": "Tolumi Adamson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcherokee/portfolio/issues"
+  },
+  "homepage": "https://github.com/tcherokee/portfolio#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.2"
+  }
+}
