@@ -4,14 +4,91 @@ header {
   height: 100%;
   color: $white;
 
+  nav {
+    height: em(30);
+    padding: em(10);
+
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: right;
+
+      li {
+        text-transform: uppercase;
+        display: inline-block;
+
+        a {
+          padding: 10px;
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
   section {
+    display: inline-block;
     position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 500px;
-    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .whoami {
+      color: $highlight-primary;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+
+  aside {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: em(20);
+
+    p {
+      margin: 0;
+    }
+
+    .arrow {
+      position: relative;
+      display: inline-block;
+      content: '';
+    	top: 0px;
+      left: 25%;
+      height: em(25);
+      width: em(25);
+      border-style: solid;
+      border-width: 0.25em 0.25em 0 0;
+    	transform: rotate(135deg) translateX(-25%);
+      animation: bounce 2.5s ease infinite;
+    }
+
+    @keyframes bounce {
+      0%, 15%, 40%, 60%, 85%, 100% {
+        top: 20px;
+      }
+
+      30% {
+        top:-10px
+      }
+
+      50% {
+        top: 0px;
+      }
+
+      70% {
+        top: 10px;
+      }
+    }
   }
 }

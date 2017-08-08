@@ -2,6 +2,7 @@
 
 var gulp          = require('gulp'),
     concat        = require('gulp-concat'),
+    babel         = require('gulp-babel'),
     uglify        = require('gulp-uglify'),
     cleanCSS      = require('gulp-clean-css'),
     gulpSequence  = require('gulp-sequence'),
@@ -43,6 +44,9 @@ var gulp          = require('gulp'),
                 'src/js/scripts.js'
               ])
                  .pipe(maps.init())
+                 .pipe(babel({
+                   presets: ['env']
+                 }))
                  .pipe(concat('app.js'))
                  .pipe(maps.write('./'))
                  .pipe(gulp.dest('dist/js'))
