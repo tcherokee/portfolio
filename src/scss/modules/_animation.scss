@@ -1,0 +1,27 @@
+@keyframes bounce {
+  0%, 15%, 40%, 60%, 85%, 100% {
+    top: 20px;
+  }
+
+  30% {
+    top:-10px
+  }
+
+  50% {
+    top: 0px;
+  }
+
+  70% {
+    top: 10px;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

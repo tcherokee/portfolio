@@ -423,8 +423,14 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    header section .whoami {
-      color: #ffeb3b; }
+    header section h1 {
+      text-align: center; }
+      header section h1 .whoami {
+        color: #ffeb3b; }
+      header section h1 .text-cursor {
+        font-size: 1.25em;
+        font-weight: 100;
+        animation: blink 0.8s infinite; }
     header section ul {
       padding: 0;
       margin: 0;
@@ -439,7 +445,7 @@ header {
     bottom: 1.25em; }
     header aside p {
       margin: 0; }
-    header aside .arrow {
+    header aside #scrollArrow {
       position: relative;
       display: inline-block;
       content: '';
@@ -461,5 +467,11 @@ header {
     top: 0px; }
   70% {
     top: 10px; } }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 /*# sourceMappingURL=main.css.map */

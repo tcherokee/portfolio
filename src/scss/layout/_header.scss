@@ -33,8 +33,18 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    .whoami {
-      color: $highlight-primary;
+    h1 {
+      text-align: center;
+
+      .whoami {
+        color: $highlight-primary;
+      }
+
+      .text-cursor {
+        font-size: em(20);
+        font-weight: 100;
+        animation: blink 0.8s infinite;
+      }
     }
 
     ul {
@@ -59,7 +69,7 @@ header {
       margin: 0;
     }
 
-    .arrow {
+    #scrollArrow {
       position: relative;
       display: inline-block;
       content: '';
@@ -71,24 +81,6 @@ header {
       border-width: 0.25em 0.25em 0 0;
     	transform: rotate(135deg) translateX(-25%);
       animation: bounce 2.5s ease infinite;
-    }
-
-    @keyframes bounce {
-      0%, 15%, 40%, 60%, 85%, 100% {
-        top: 20px;
-      }
-
-      30% {
-        top:-10px
-      }
-
-      50% {
-        top: 0px;
-      }
-
-      70% {
-        top: 10px;
-      }
     }
   }
 }
